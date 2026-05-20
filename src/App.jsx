@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 
-import ProtectedRoute from "./components/ProtectedRoute";
+import protectedRoute from "./components/protectedRoute";
 
 function App() {
 
@@ -24,9 +24,9 @@ function App() {
             <Route
                 path="/"
                 element={
-                    <ProtectedRoute>
+                    <protectedRoute>
                         <Home />
-                    </ProtectedRoute>
+                    </protectedRoute>
                 }
             />
 
